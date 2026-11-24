@@ -4,6 +4,12 @@
     tools:context=".player.PlayQueueActivity">
 
     <item
+        android:id="@+id/action_driving_mode"
+        android:icon="@drawable/ic_directions_car"
+        android:title="@string/driving_mode"
+        app:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/action_append_playlist"
         android:icon="@drawable/ic_playlist_add"
         android:title="@string/add_to_playlist"

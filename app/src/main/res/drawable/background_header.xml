@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Background of the side menu's header: a soft neon green glow behind the logo, fading into
+     the charcoal header. The colours are loki_green_neon at 22% and 0% opacity. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:centerX="0.12"
+        android:centerY="0.45"
+        android:endColor="#0039FF14"
+        android:gradientRadius="200dp"
+        android:startColor="#3839FF14"
+        android:type="radial" />
+</shape>

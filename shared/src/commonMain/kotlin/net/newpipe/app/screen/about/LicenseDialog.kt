@@ -21,6 +21,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
+import net.newpipe.app.BuildConfig
+import net.newpipe.app.Constants
 import net.newpipe.app.model.License
 import net.newpipe.app.preview.ThemePreviewProvider
 import newpipe.shared.generated.resources.Res
@@ -91,8 +93,8 @@ fun LicenseDialog(
 private fun LicenseDialogPreview() {
     LicenseDialog(
         license = License(
-            name = "NewPipe",
-            website = "https://newpipe.net/",
+            name = BuildConfig.APP_NAME,
+            website = Constants.URL_GITHUB,
             spdxID = "GPL-3.0-or-later"
         )
     )

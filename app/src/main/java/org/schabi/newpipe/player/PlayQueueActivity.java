@@ -142,6 +142,9 @@ public final class PlayQueueActivity extends AppCompatActivity
         } else if (itemId == R.id.action_settings) {
             NavigationHelper.openSettings(this);
             return true;
+        } else if (itemId == R.id.action_driving_mode) {
+            DrivingModeActivity.open(this, player);
+            return true;
         } else if (itemId == R.id.action_append_playlist) {
             PlaylistDialog.showForPlayQueue(player, getSupportFragmentManager());
             return true;
@@ -176,6 +179,16 @@ public final class PlayQueueActivity extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // the player sends updates to only one screen at a time, so take them back
+        // after returning from driving mode
+        if (player != null) {
+            player.setActivityListener(this);
+        }
     }
 
     @Override

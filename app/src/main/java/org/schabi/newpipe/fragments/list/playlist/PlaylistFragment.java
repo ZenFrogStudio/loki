@@ -30,6 +30,7 @@ import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity;
 import org.schabi.newpipe.database.stream.model.StreamEntity;
 import org.schabi.newpipe.databinding.PlaylistControlBinding;
 import org.schabi.newpipe.databinding.PlaylistHeaderBinding;
+import org.schabi.newpipe.download.PlaylistDownloader;
 import org.schabi.newpipe.error.ErrorInfo;
 import org.schabi.newpipe.error.ErrorUtil;
 import org.schabi.newpipe.error.UserAction;
@@ -240,6 +241,8 @@ public class PlaylistFragment extends BaseListInfoFragment<StreamInfoItem, Playl
                     currentInfo == null ? List.of() : currentInfo.getThumbnails());
         } else if (itemId == R.id.menu_item_bookmark) {
             onBookmarkClicked();
+        } else if (itemId == R.id.menu_item_download_playlist) {
+            PlaylistDownloader.showForOnlinePlaylist(activity, serviceId, url);
         } else if (itemId == R.id.menu_item_append_playlist) {
             if (currentInfo != null) {
                 disposables.add(PlaylistDialog.createCorrespondingDialog(

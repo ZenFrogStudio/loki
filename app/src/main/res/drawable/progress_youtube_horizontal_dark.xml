@@ -8,7 +8,11 @@
     <item android:id="@android:id/progress">
         <clip>
             <shape>
-                <solid android:color="@color/dark_youtube_primary_color" />
+                <gradient
+                    android:angle="0"
+                    android:startColor="@color/loki_green_deep"
+                    android:centerColor="@color/loki_green"
+                    android:endColor="@color/loki_green_neon" />
             </shape>
         </clip>
     </item>

@@ -1,1 +1,1 @@
-A free lightweight YouTube frontend for Android.
+Free, ad-free video and music streaming with a big-button driving mode.

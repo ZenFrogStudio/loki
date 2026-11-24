@@ -33,6 +33,8 @@ import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import kotlin.random.Random
 import net.newpipe.app.composable.about.LibraryListItem
+import net.newpipe.app.BuildConfig
+import net.newpipe.app.Constants
 import net.newpipe.app.model.Library
 import net.newpipe.app.model.License
 import net.newpipe.app.platform.ShareHandler
@@ -107,8 +109,8 @@ fun LicensePageContent(
                         .wrapContentWidth(Alignment.End),
                     onClick = {
                         licenseToShow = License(
-                            name = "NewPipe",
-                            website = "https://newpipe.net/",
+                            name = BuildConfig.APP_NAME,
+                            website = Constants.URL_GITHUB,
                             spdxID = "GPL-3.0-or-later"
                         )
                         shouldShowLicenseDialog = true

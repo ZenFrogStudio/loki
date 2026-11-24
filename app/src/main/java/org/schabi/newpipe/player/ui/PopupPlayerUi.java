@@ -168,6 +168,7 @@ public final class PopupPlayerUi extends VideoPlayerUi {
         binding.getRoot().findViewById(R.id.metadataView).setVisibility(View.GONE);
         binding.queueButton.setVisibility(View.GONE);
         binding.segmentsButton.setVisibility(View.GONE);
+        binding.drivingModeButton.setVisibility(View.GONE);
         binding.moreOptionsButton.setVisibility(View.GONE);
         binding.topControls.setOrientation(LinearLayout.HORIZONTAL);
         binding.primaryControls.getLayoutParams().width = WRAP_CONTENT;

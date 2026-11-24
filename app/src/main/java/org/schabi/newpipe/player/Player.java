@@ -614,6 +614,11 @@ public final class Player implements PlaybackListener, Listener {
 
         playQueue = queue;
         playQueue.init();
+        // Loki: a queue can arrive already shuffled (driving mode, or when switching players).
+        // Tell ExoPlayer, so the shuffle buttons show "on" and their first tap turns it off.
+        if (playQueue.isShuffled()) {
+            simpleExoPlayer.setShuffleModeEnabled(true);
+        }
         reloadPlayQueueManager();
 
         UIs.call(PlayerUi::initPlayback);
@@ -1305,7 +1310,10 @@ public final class Player implements PlaybackListener, Listener {
 
         if (playQueue != null) {
             if (shuffleModeEnabled) {
-                playQueue.shuffle();
+                // an already shuffled queue (see initPlayback) keeps its order
+                if (!playQueue.isShuffled()) {
+                    playQueue.shuffle();
+                }
             } else {
                 playQueue.unshuffle();
             }

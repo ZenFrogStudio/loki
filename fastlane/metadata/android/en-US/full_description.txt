@@ -1,1 +1,14 @@
-NewPipe does not use any Google framework libraries, or the YouTube API. It only parses the website in order to gain the information it needs. Therefore this app can be used on devices without Google Services installed. Also, you don't need a YouTube account to use NewPipe, and it's FLOSS.
+Loki plays online video and audio without ads, without an account, and without Google's services. It reads the public websites directly, so it also works on phones that have no Google apps installed.
+
+<b>Driving mode</b>
+A full-screen, audio-only screen made for quick use at a glance. Three giant tap zones for previous, play/pause and next, a large shuffle button, and swipe to skip forward or back. The screen stays awake and nothing on it needs careful aiming.
+
+<b>Also included</b>
+• Background and popup playback
+• Downloads for video, audio and subtitles
+• Subscriptions, playlists and watch history, all stored on your phone
+• Import and export of your data, including backups made by NewPipe
+• Works with YouTube, PeerTube, SoundCloud, Bandcamp and media.ccc.de
+
+<b>Free and open</b>
+Loki is free software under the GNU General Public License v3. It is a fork of NewPipe and is built on the work of Team NewPipe and its contributors. Loki is an independent project and is not affiliated with or endorsed by NewPipe.

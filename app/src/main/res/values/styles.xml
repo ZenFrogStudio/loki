@@ -27,6 +27,8 @@
         <item name="colorPrimary">@color/light_youtube_primary_color</item>
         <item name="colorPrimaryDark">@color/light_youtube_primary_color</item>
         <item name="colorAccent">@color/light_youtube_accent_color</item>
+        <!-- switches, checkboxes, sliders: green (the toolbar colour is charcoal, so not that) -->
+        <item name="colorControlActivated">@color/loki_green_deep</item>
         <item name="android:windowBackground">@color/light_background_color</item>
         <item name="windowBackground">@color/light_background_color</item>
 
@@ -51,6 +53,8 @@
         <item name="colorPrimary">@color/dark_youtube_primary_color</item>
         <item name="colorPrimaryDark">@color/dark_youtube_primary_color</item>
         <item name="colorAccent">@color/dark_youtube_accent_color</item>
+        <!-- switches, checkboxes, sliders: neon green (the toolbar colour is charcoal, so not that) -->
+        <item name="colorControlActivated">@color/loki_green_neon</item>
         <item name="android:windowBackground">@color/dark_background_color</item>
         <item name="windowBackground">@color/dark_background_color</item>
 

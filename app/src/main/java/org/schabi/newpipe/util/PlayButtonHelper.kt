@@ -14,6 +14,7 @@ import androidx.preference.PreferenceManager
 import org.schabi.newpipe.R
 import org.schabi.newpipe.databinding.PlaylistControlBinding
 import org.schabi.newpipe.fragments.list.playlist.PlaylistControlViewHolder
+import org.schabi.newpipe.player.DrivingModeActivity
 import org.schabi.newpipe.player.PlayerType
 
 /**
@@ -37,9 +38,8 @@ object PlayButtonHelper {
         fragment: PlaylistControlViewHolder
     ) {
         // click listener
-        playlistControlBinding.playlistCtrlPlayAllButton.setOnClickListener {
-            NavigationHelper.playOnMainPlayer(activity, fragment.getPlayQueue())
-            showHoldToAppendToastIfNeeded(activity)
+        playlistControlBinding.playlistCtrlDrivingModeButton.setOnClickListener {
+            DrivingModeActivity.startShuffled(activity, fragment.getPlayQueue())
         }
         playlistControlBinding.playlistCtrlPlayPopupButton.setOnClickListener {
             NavigationHelper.playOnPopupPlayer(activity, fragment.getPlayQueue(), false)
@@ -51,10 +51,6 @@ object PlayButtonHelper {
         }
 
         // long click listener
-        playlistControlBinding.playlistCtrlPlayAllButton.setOnLongClickListener {
-            NavigationHelper.enqueueOnPlayer(activity, fragment.getPlayQueue(), PlayerType.MAIN)
-            true
-        }
         playlistControlBinding.playlistCtrlPlayPopupButton.setOnLongClickListener {
             NavigationHelper.enqueueOnPlayer(activity, fragment.getPlayQueue(), PlayerType.POPUP)
             true

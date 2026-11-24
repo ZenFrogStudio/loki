@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <title>Loki banner</title>
+  <defs>
+    <radialGradient id="bg" gradientUnits="userSpaceOnUse" cx="54" cy="40" r="78"><stop offset="0" stop-color="#3A3D42"/><stop offset="1" stop-color="#1C1E20"/></radialGradient>
+    <radialGradient id="glow" gradientUnits="userSpaceOnUse" cx="54" cy="54" r="40"><stop offset="0" stop-color="#39FF14" stop-opacity="0.34"/><stop offset="0.55" stop-color="#39FF14" stop-opacity="0.1"/><stop offset="1" stop-color="#39FF14" stop-opacity="0"/></radialGradient>
+    <linearGradient id="rim" gradientUnits="userSpaceOnUse" x1="31" y1="23" x2="77" y2="85"><stop offset="0" stop-color="#E4FFD6"/><stop offset="0.22" stop-color="#7DFF5E"/><stop offset="0.6" stop-color="#1FB80E"/><stop offset="1" stop-color="#053D04"/></linearGradient>
+    <linearGradient id="face" gradientUnits="userSpaceOnUse" x1="54" y1="23" x2="54" y2="85"><stop offset="0" stop-color="#39FF14"/><stop offset="0.55" stop-color="#1FB80E"/><stop offset="1" stop-color="#0C6B08"/></linearGradient>
+  </defs>
+  <defs>
+    <radialGradient id="bannerBg" cx="0.27" cy="0.45" r="0.9"><stop offset="0" stop-color="#3A3D42"/><stop offset="1" stop-color="#1C1E20"/></radialGradient>
+    <linearGradient id="word" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7DFF5E"/><stop offset="0.5" stop-color="#39FF14"/><stop offset="1" stop-color="#1FB80E"/></linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bannerBg)"/>
+  <g transform="translate(43.2 50.4) scale(3.93) translate(-21 -20.75)">
+  <circle cx="54" cy="54" r="40" fill="url(#glow)"/>
+  <path d="M31,24.96 Q31,22.96 32.73,23.96 L41.27,28.89 Q43,29.88 43,31.88 L43,70.5 Q43,72.5 45,72.5 L73,72.5 Q75,72.5 75,74.5 L75,82.5 Q75,84.5 73,84.5 L33,84.5 Q31,84.5 31,82.5 Z" fill="url(#rim)"/>
+  <path d="M51,36.5 Q51,34.5 52.73,35.5 L75.27,48.5 Q77,49.5 75.27,50.5 L52.73,63.5 Q51,64.5 51,62.5 Z" fill="url(#rim)"/>
+  <path d="M33.2,27.77 Q33.2,26.77 34.07,27.27 L39.93,30.66 Q40.8,31.16 40.8,32.16 L40.8,73.7 Q40.8,74.7 41.8,74.7 L71.8,74.7 Q72.8,74.7 72.8,75.7 L72.8,81.3 Q72.8,82.3 71.8,82.3 L34.2,82.3 Q33.2,82.3 33.2,81.3 Z" fill="url(#face)"/>
+  <path d="M53.2,39.31 Q53.2,38.31 54.07,38.81 L71.73,49 Q72.6,49.5 71.73,50 L54.07,60.19 Q53.2,60.69 53.2,59.69 Z" fill="url(#face)"/>
+  </g>
+  <text x="300.8" y="231.84" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="144" font-weight="700" fill="url(#word)">Loki</text>
+</svg>

@@ -35,8 +35,10 @@
         android:background="?attr/colorAccent"
         android:clickable="false" />
 
+    <!-- Loki: replaces NewPipe's "Play all". Plays the list shuffled in the background
+         and opens driving mode. -->
     <LinearLayout
-        android:id="@+id/playlist_ctrl_play_all_button"
+        android:id="@+id/playlist_ctrl_driving_mode_button"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -48,10 +50,10 @@
         <org.schabi.newpipe.views.NewPipeTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_playlist_play"
+            android:drawableStart="@drawable/ic_directions_car"
             android:drawablePadding="4dp"
             android:gravity="center_vertical"
-            android:text="@string/play_all"
+            android:text="@string/driving_mode"
             android:textColor="?attr/colorAccent"
             android:textSize="@dimen/channel_rss_title_size" />
     </LinearLayout>

@@ -16,6 +16,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.IntentCompat
 import androidx.core.net.toUri
+import androidx.core.view.isVisible
 import com.grack.nanojson.JsonWriter
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
@@ -99,6 +100,10 @@ class ErrorActivity : AppCompatActivity() {
             openPrivacyPolicyDialog(this, "GITHUB")
         }
 
+        // only offer the ways of reporting that have somewhere to go (see the constants below)
+        binding.errorReportEmailButton.isVisible = ERROR_EMAIL_ADDRESS.isNotEmpty()
+        binding.errorReportGitHubButton.isVisible = ERROR_GITHUB_ISSUE_URL.isNotEmpty()
+
         // normal bugreport
         buildInfo(errorInfo)
         binding.errorMessageView.setTextWithLinks(errorInfo.getMessage(this))
@@ -134,13 +139,19 @@ class ErrorActivity : AppCompatActivity() {
     }
 
     private fun openPrivacyPolicyDialog(context: Context, action: String) {
+        val privacyPolicyUrl = context.getString(R.string.privacy_policy_url)
         AlertDialog.Builder(context)
             .setIcon(android.R.drawable.ic_dialog_alert)
             .setTitle(R.string.privacy_policy_title)
             .setMessage(R.string.start_accept_privacy_policy)
             .setCancelable(false)
-            .setNeutralButton(R.string.read_privacy_policy) { _, _ ->
-                ShareUtils.openUrlInApp(context, context.getString(R.string.privacy_policy_url))
+            .apply {
+                // the "read it" button only makes sense once Loki has a privacy policy page
+                if (privacyPolicyUrl.isNotEmpty()) {
+                    setNeutralButton(R.string.read_privacy_policy) { _, _ ->
+                        ShareUtils.openUrlInApp(context, privacyPolicyUrl)
+                    }
+                }
             }
             .setPositiveButton(R.string.accept) { _, _ ->
                 if (action == "EMAIL") { // send on email
@@ -274,9 +285,13 @@ class ErrorActivity : AppCompatActivity() {
         // BUNDLE TAGS
         const val ERROR_INFO = "error_info"
 
-        private const val ERROR_EMAIL_ADDRESS = "crashreport@newpipe.schabi.org"
+        // Where Loki's crash reports go. Both are empty on purpose: reports from Loki must never
+        // reach the NewPipe team, and Loki has no address of its own yet. While one is empty,
+        // its button on the error screen is hidden. Fill them in before publishing, together
+        // with privacy_policy_url in donottranslate.xml.
+        private const val ERROR_EMAIL_ADDRESS = ""
         private const val ERROR_EMAIL_SUBJECT = "Exception in "
 
-        private const val ERROR_GITHUB_ISSUE_URL = "https://github.com/TeamNewPipe/NewPipe/issues"
+        private const val ERROR_GITHUB_ISSUE_URL = ""
     }
 }

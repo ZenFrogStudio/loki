@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- NewPipe's code refers to its logo by these names. They now point at Loki's logo,
+         so none of that code has to change. The real artwork is in the ic_loki_* files. -->
+    <drawable name="splash_foreground">@drawable/ic_loki_logo</drawable>
+    <drawable name="ic_newpipe_triangle_white">@drawable/ic_loki_mark_white</drawable>
+    <drawable name="ic_newpipe_update">@drawable/ic_loki_mark_white</drawable>
+</resources>

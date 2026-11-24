@@ -30,7 +30,7 @@
     <string name="tab_about">ऐप के बारे में और सामान्य प्रश्न</string>
     <string name="tab_licenses">लाइसेंस</string>
     <string name="view_on_github">GitHub पर देखें</string>
-    <string name="app_license_title">NewPipe का लाइसेंस</string>
+    <string name="app_license_title">Loki का लाइसेंस</string>
     <string name="read_full_license">लाइसेंस पढ़ें</string>
     <string name="contribution_title">योगदान करें</string>
     <string name="title_activity_history">इतिहास</string>
@@ -793,7 +793,7 @@
     <string name="migration_info_6_7_title">साउंडक्लाउड टॉप 50 पेज हटा दिया गया</string>
     <string name="migration_info_6_7_message">साउंडक्लाउड ने ओरिजिनल टॉप 50 चार्ट बंद कर दिए हैं। इससे जुड़ा टैब आपके मेन पेज से हटा दिया गया है।</string>
     <string name="migration_info_7_8_title">YouTube कंबाइंड ट्रेंडिंग हटा दी गई</string>
-    <string name="migration_info_7_8_message">YouTube ने 21 जुलाई 2025 से कंबाइंड ट्रेंडिंग पेज बंद कर दिया है। NewPipe ने डिफ़ॉल्ट ट्रेंडिंग पेज को ट्रेंडिंग लाइवस्ट्रीम से बदल दिया है।\n\nआप \"सेटिंग्स &gt; कंटेंट &gt; मेन पेज कंटेंट\" में अलग-अलग ट्रेंडिंग पेज भी चुन सकते हैं।</string>
+    <string name="migration_info_7_8_message">YouTube ने 21 जुलाई 2025 से कंबाइंड ट्रेंडिंग पेज बंद कर दिया है। Loki ने डिफ़ॉल्ट ट्रेंडिंग पेज को ट्रेंडिंग लाइवस्ट्रीम से बदल दिया है।\n\nआप \"सेटिंग्स &gt; कंटेंट &gt; मेन पेज कंटेंट\" में अलग-अलग ट्रेंडिंग पेज भी चुन सकते हैं।</string>
     <string name="trending_gaming">गेमिंग ट्रेंडस</string>
     <string name="trending_podcasts">ट्रेंडिंग पॉडकास्ट</string>
     <string name="trending_movies">ट्रेंडिंग फिल्में और शो</string>
@@ -823,7 +823,7 @@
     <string name="import_subscriptions_summary">पिछले .json एक्सपोर्ट से सब्सक्रिप्शन इंपोर्ट करें</string>
     <string name="export_subscriptions_summary">अपनी सब्सक्रिप्शन को एक .json फ़ाइल में एक्सपोर्ट करें</string>
     <string name="import_from_previous_export">पिछले एक्सपोर्ट से इंपोर्ट करें</string>
-    <string name="api23_requirement_dialog_title">NewPipe, Android 5 के लिए सपोर्ट बंद कर रहा है</string>
-    <string name="api23_requirement_dialog_message">दुर्भाग्य से, NewPipe कुछ ऐसी लाइब्रेरीज़ पर निर्भर है जिन्होंने Android 5.0 और 5.1 के लिए सपोर्ट बंद कर दिया है। इसलिए, अफ़सोस की बात है कि NewPipe का अगला वर्शन सिर्फ़ Android 6 या उससे नए वर्शन वाले डिवाइस पर ही काम करेगा। ज़्यादा जानकारी के लिए ब्लॉग पोस्ट पढ़ें।</string>
+    <string name="api23_requirement_dialog_title">Loki, Android 5 के लिए सपोर्ट बंद कर रहा है</string>
+    <string name="api23_requirement_dialog_message">दुर्भाग्य से, Loki कुछ ऐसी लाइब्रेरीज़ पर निर्भर है जिन्होंने Android 5.0 और 5.1 के लिए सपोर्ट बंद कर दिया है। इसलिए, अफ़सोस की बात है कि Loki का अगला वर्शन सिर्फ़ Android 6 या उससे नए वर्शन वाले डिवाइस पर ही काम करेगा। ज़्यादा जानकारी के लिए ब्लॉग पोस्ट पढ़ें।</string>
     <string name="api23_requirement_dialog_blogpost">ब्लॉगपोस्ट</string>
 </resources>
